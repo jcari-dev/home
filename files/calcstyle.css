@@ -1,0 +1,82 @@
+#main{
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: 25px 25px 25px 25px 25px;
+    grid-template-columns: 25px 25px 25px 25px 25px;
+    padding-left: 7px;
+}
+
+#bodycalc{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: ivory;
+    padding: 20px;
+    width: 135px;
+    height: 145px;
+}
+
+#display{
+    border: 1px solid black;
+    width: 145px;
+    height: 17px;
+}
+
+ul{
+    
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+
+#pwhite{
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#darkmode{
+    text-align: right;
+
+}
+#darkmodeicon{
+    width: 35px;
+    height: 35px;
+
+}
+#darkmodeicon:hover{
+   cursor: pointer;
+}
+
+#btnclear{
+    height: 25px;
+    width: 35px;
+
+}
+
+#btnclear2{
+    font-size: 10px;
+    padding-left: 5px;
+    height: 25px;
+    width: 50px;
+}
