@@ -1,0 +1,58 @@
+.grid-container{
+    margin: 0 auto;
+    max-width: 75px ;
+    display: grid;
+    grid-template-rows: 25px 25px 25px;
+    grid-template-columns: 25px 25px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+
+}
+
+h1,h2,p{
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+#darkmode{
+    text-align: right;
+
+}
+#darkmodeicon{
+    width: 35px;
+    height: 35px;
+
+}
+#darkmodeicon:hover{
+   cursor: pointer;
+}
+
+#coin{
+    height: 50px;
+    width: 50px;
+}
+
+#coinimg{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+#turncall{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+#coin:hover{
+    -webkit-transform: scale(1.5);
+    transition: 1s;
+  }
+
+#players{
+    padding-top: 25px;
+    text-align: center;
+}
+

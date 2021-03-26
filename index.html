@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="darkmode">
+        <img id="darkmodeicon" data-status="on" src="https://i.ibb.co/F6ybRvf/moon-half-visible-face-on-light-and-half-on-darkness.png" onclick="darkmode()">
+    </div>
+    <h1 id="idh1">Jorge's amazing 2 player Tic Tac Toe!</h1>
+    <h2 id="idh2">Click the coin to select who's going to go first!</h2>
+        <div id="coinimg">
+        <img id="coin" src="https://i.ibb.co/rQfqy6c/coin.png" alt="coin" onclick ="flip()">
+        <p id="idp">Player 1 is Heads, Player 2 is Tails</p>
+        </div>
+        <div id="turncall"></div>
+        <div id="gridid" class="grid-container">
+            <button id="block1" onclick="placeSign1()"></button>
+            <button id="block2" onclick="placeSign2()"></button>
+            <button id="block3" onclick="placeSign3()"></button>
+            <button id="block4" onclick="placeSign4()"></button>
+            <button id="block5" onclick="placeSign5()"></button>
+            <button id="block6" onclick="placeSign6()"></button>
+            <button id="block7" onclick="placeSign7()"></button>
+            <button id="block8" onclick="placeSign8()"></button>
+            <button id="block9" onclick="placeSign9()"></button>
+        </div>
+
+        
+
+        <div id="players">
+            <input id="player1btn" type="button" value="Player 1/X" onclick="player1Turn()">
+            <input id="player2btn" type="button" value="Player 2/O" onclick="player2Turn()"><br><br>
+            <input id="reset" type="button" value="Reset" onclick="reset()">
+        </div>
+</body>
+
+</html>
