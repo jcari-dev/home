@@ -28,6 +28,7 @@ ul {
     list-style-type: none;
     text-align: center;
     font-size: large;
+    text-decoration: none;
 }
 
 a:visited {
@@ -42,13 +43,12 @@ a:focus {
     text-decoration: none;
 }
 
-a:hover,
 a:active {
     text-decoration: none;
-    color: blue;
 }
 
 a {
+    text-align: center;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
