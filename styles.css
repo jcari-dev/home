@@ -1,6 +1,6 @@
-.grid-container{
+.grid-container {
     margin: 0 auto;
-    max-width: 75px ;
+    max-width: 75px;
     display: grid;
     grid-template-rows: 25px 25px 25px;
     grid-template-columns: 25px 25px 25px;
@@ -9,54 +9,89 @@
 
 }
 
-#pwhite{
+header {
+    text-align: center;
+}
+
+#pwhite {
     color: white;
 }
 
-h1,h2,p{
+h1,
+h2,
+p {
     text-align: center;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+}
 
-#darkmode{
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#darkmode {
     text-align: right;
 
 }
-#darkmodeicon{
+
+#darkmodeicon {
     width: 35px;
     height: 35px;
 
 }
-#darkmodeicon:hover{
-   cursor: pointer;
+
+#darkmodeicon:hover {
+    cursor: pointer;
 }
 
-#coin{
+#coin {
     height: 50px;
     width: 50px;
 }
 
-#coinimg{
+#coinimg {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 5px;
 
 }
 
-#turncall{
+#turncall {
     text-align: center;
     padding-bottom: 15px;
 }
 
 
-#coin:hover{
+#coin:hover {
     -webkit-transform: scale(1.5);
     transition: 1s;
-  }
+}
 
-#players{
+#players {
     padding-top: 25px;
     text-align: center;
 }
-

@@ -31,7 +31,10 @@ function darkmode(){
     document.getElementById("idp").style.color = "#f5f0ff";
     document.getElementById("pwhite").style.color = "#f5f0ff";
     document.getElementById("gridid").style.border = "1px solid rgba(255, 255, 255, 0.8";
-    
+    document.getElementById("li1").style.color = "#f5f0ff";
+    document.getElementById("li2").style.color = "#f5f0ff"; //hated to this LOL
+    document.getElementById("li3").style.color = "#f5f0ff";
+    document.getElementById("turncall").style.color = "#f5f0ff";
     //can't revert it
 
 }
