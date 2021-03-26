@@ -25,10 +25,11 @@ function flip() {
 }
 
 function darkmode(){
-    document.body.style.backgroundColor = "#000000";
-    document.getElementById("idh1").style.color = "#FFFFFF";
-    document.getElementById("idh2").style.color = "#FFFFFF";
-    document.getElementById("idp").style.color = "#FFFFFF";
+    document.body.style.backgroundColor = "#f5f0ff";
+    document.getElementById("idh1").style.color = "#f5f0ff";
+    document.getElementById("idh2").style.color = "#f5f0ff";
+    document.getElementById("idp").style.color = "#f5f0ff";
+    document.getElementById("pwhite").style.color = "#f5f0ff";
     document.getElementById("gridid").style.border = "1px solid rgba(255, 255, 255, 0.8";
     
     //can't revert it
