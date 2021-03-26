@@ -9,6 +9,10 @@
 
 }
 
+#pwhite{
+    color: white;
+}
+
 h1,h2,p{
     text-align: center;
     font-family: "Lucida Console", "Courier New", monospace;
