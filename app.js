@@ -25,7 +25,7 @@ function flip() {
 }
 
 function darkmode(){
-    document.body.style.backgroundColor = "#f5f0ff";
+    document.body.style.backgroundColor = "#000000";
     document.getElementById("idh1").style.color = "#f5f0ff";
     document.getElementById("idh2").style.color = "#f5f0ff";
     document.getElementById("idp").style.color = "#f5f0ff";
