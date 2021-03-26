@@ -105,7 +105,19 @@ function btnDotShow() {
     document.getElementById('display').innerHTML = display.join('');
 }
 
+function clearDis(){
+    display.pop();
+    document.getElementById('display').innerHTML = display.join('');
+}
 
+function clearAll(){
+    while (display.length > 0){
+        display.pop();
+    } 
+
+    document.getElementById('display').innerHTML = 0;
+
+}
 
 function solve() {
     // console.log(operator);
