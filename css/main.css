@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background-color: ivory;
+}
+
+#mainImg {
+    height: 35%;
+    width: 35%;
+}
+
+.champImg {
+    padding-top: 3%;
+    height: 32px;
+    width: 32px;
+}
+
+#accountinfo {
+    margin: 0 auto;
+    height: 25%;
+    border: 1px solid black;
+    width: 25%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#matches {
+    margin: 0 auto;
+    height: 25%;
+    border: 1px solid black;
+    width: 25%;
+}
+
+#matchesVol {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.itemImg {
+    /* display: inline-block; */
+    height: 32px;
+    width: 32px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
