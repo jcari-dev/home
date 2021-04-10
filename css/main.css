@@ -107,6 +107,7 @@ form {
 }
 
 #accountinfo {
+    min-width: 200px;
     display: none;
     background-color: royalblue;
     border-radius: 5%;
@@ -133,6 +134,7 @@ form {
 }
 
 .matchnumblue {
+    min-width: 200px;
     display: inline-block;
     background-color: #4169E1;
     width: 25%;
@@ -144,6 +146,7 @@ form {
 }
 
 .matchnumred {
+    min-width: 200px;
     display: inline-block;
     border-radius: 5px;
     background-color: #DC143C;
