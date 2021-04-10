@@ -114,11 +114,11 @@ $(() => {
     let $baseurlRankedQueue = "RANKED_SOLO_5x5/" // for now it will only support ranked games
     let $baseurlAcc = ".api.riotgames.com/lol/match/v4/matchlists/by-account/"; // url used to get information of match history from user using encrypted account id
     let $baseurlMatchId = ".api.riotgames.com/lol/match/v4/matches/"; // url used to get information about a specific match from the user
-    let $championImg = "http://ddragon.leagueoflegends.com/cdn/11.7.1/img/champion/";
+    let $championImg = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/champion/";
     let $ornnItems = "https://ddragon.bangingheads.net/cdn/latest/img/item/"; // rito so good they don't add ornn item images in the database 
-    let $itemImg = "http://ddragon.leagueoflegends.com/cdn/11.7.1/img/item/";
-    let $playerIconUrl = "http://ddragon.leagueoflegends.com/cdn/11.7.1/img/profileicon/"
-    let $summImgUrl = "http://ddragon.leagueoflegends.com/cdn/11.7.1/img/spell/"
+    let $itemImg = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/item/";
+    let $playerIconUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/profileicon/"
+    let $summImgUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/spell/"
     let $champJSON;
     let $champNameBeforeAllyT
     let $champAllyTips;
@@ -139,18 +139,18 @@ $(() => {
             // console.log(data, $smmid);
             $playerIcon = data.profileIconId;
 
-            $.getJSON("http://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/champion.json", function(championList) { // json provided by api developer, it contains a list of all champions nested in an object
+            $.getJSON("https://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/champion.json", function(championList) { // json provided by api developer, it contains a list of all champions nested in an object
                 $championList = championList;
 
             })
-            $.getJSON("http://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/item.json", function(itemList) {
+            $.getJSON("https://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/item.json", function(itemList) {
                 $daListItem = Object.entries(itemList.data)
             })
-            $.getJSON("http://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/profileicon.json", function(iconList) {
+            $.getJSON("https://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/profileicon.json", function(iconList) {
                 $daListIcon = iconList;
 
             })
-            $.getJSON("http://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/summoner.json", function(summonerList) {
+            $.getJSON("https://ddragon.leagueoflegends.com/cdn/11.7.1/data/en_US/summoner.json", function(summonerList) {
                 $daListSum = summonerList;
             })
 
