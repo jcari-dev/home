@@ -4,6 +4,7 @@ body {
 }
 
 #mainImg {
+    min-width: 250px;
     height: 35%;
     width: 35%;
 }

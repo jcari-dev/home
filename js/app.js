@@ -132,6 +132,7 @@ $(() => {
 
             url: $magic + $http + $server + $baseurlSu + $sname + $api_key,
         }).then(function(data) {
+            console.log(data)
             $sname2 = data.name;
             $slevel = data.summonerLevel;
             $accid = data.accountId;
@@ -164,7 +165,8 @@ $(() => {
             type: "GET",
             url: $magic + $http + $server + $baseurlAcc + $accid + $api_key,
         }).then(function(data2) {
-            // console.log(data2);
+            console.log(data2)
+                // console.log(data2);
             $totalGames = data2.totalGames;
             // $("#totalgames").text("Total Games on S13: " + data2.totalGames) // display total number of games in the current season
             // console.log("alive")
@@ -189,6 +191,7 @@ $(() => {
             type: "GET",
             url: $magic + $http + $server + $baseurlRank + $smmid + $api_key,
         }).then(function(data5) {
+            console.log(data5)
 
             for (let q of data5) { // used for/of loop just to try to see if i could optimize the code
                 $userRankLoses = data5[0].losses;
@@ -221,7 +224,8 @@ $(() => {
             type: "GET",
             url: $magic + $http + $server + $baseurlRankTier + $baseurlRankedQueue + $userRank + $userTier + $api_key,
         }).then(function(data7) {
-            // console.log(data7) NEEEEEDEDEDEDEDEDEDEDE
+            console.log(data7)
+                // console.log(data7) NEEEEEDEDEDEDEDEDEDEDE
             for (let f = 0; f < data7.length; f++) {
                 $tierWins += data7[f].wins;
                 $tierLosses += data7[f].losses;
@@ -246,6 +250,7 @@ $(() => {
                 type: "GET",
                 url: $magic + $http + $server + $baseurlMatchId + $matchesId[p] + $api_key,
             }).then(function(data3) {
+                console.log(data3)
                 $individualMatchId = [p];
                 // console.log(data3) NEEEEEDEDEDEDEDEDEDEDE
                 for (let j = 0; j < 10; j++) {
