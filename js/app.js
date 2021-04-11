@@ -107,7 +107,7 @@ $(() => {
     let $numgames = 10; // it displays the number of games stored in this var
     let $http = "https://"; // empty http for url merge purposes
     let $baseurlSu = ".api.riotgames.com/lol/summoner/v4/summoners/by-name/"; // url used to get information using only users summoners name
-    let $api_key = "?api_key=RGAPI-3c27fc1f-d2a3-4b10-bbe7-2c356996fed7"; // my api key
+    let $api_key = "?api_key=RGAPI-3e181cab-ab7f-48b4-969a-d650c73b0436"; // my api key
     let $magic = "https://cross-anywhere.herokuapp.com/" //heroku bruh byebye cross ERR UWU
     let $baseurlRank = ".api.riotgames.com/lol/league/v4/entries/by-summoner/";
     let $baseurlRankTier = ".api.riotgames.com/lol/league-exp/v4/entries/"; // base url to get the rank info of all the players in the tier and division
@@ -116,12 +116,12 @@ $(() => {
     let $baseurlMatchId = ".api.riotgames.com/lol/match/v4/matches/"; // url used to get information about a specific match from the user
     let $championImg = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/champion/";
     let $ornnItems = "https://ddragon.bangingheads.net/cdn/latest/img/item/"; // rito so good they don't add ornn item images in the database 
-    let $itemImg = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/item/";
-    let $playerIconUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/profileicon/"
-    let $summImgUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/spell/"
+    let $itemImg = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/item/"; //SELF
+    let $playerIconUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/profileicon/" // SELF
+    let $summImgUrl = "https://ddragon.leagueoflegends.com/cdn/11.7.1/img/spell/" // SELF
     let $champJSON;
     let $champNameBeforeAllyT
-    let $champAllyTips;
+    let $champAllyTips; // pls no go away uwu bad variables
     let $champAllyTipsJSON;
 
 
@@ -133,6 +133,7 @@ $(() => {
             url: $magic + $http + $server + $baseurlSu + $sname + $api_key,
         }).then(function(data) {
             console.log(data)
+            console.log($http + $server + $baseurlSu + $sname + $api_key)
             $sname2 = data.name;
             $slevel = data.summonerLevel;
             $accid = data.accountId;
@@ -166,6 +167,7 @@ $(() => {
             url: $magic + $http + $server + $baseurlAcc + $accid + $api_key,
         }).then(function(data2) {
             console.log(data2)
+            console.log($http + $server + $baseurlAcc + $accid + $api_key)
                 // console.log(data2);
             $totalGames = data2.totalGames;
             // $("#totalgames").text("Total Games on S13: " + data2.totalGames) // display total number of games in the current season
@@ -192,6 +194,7 @@ $(() => {
             url: $magic + $http + $server + $baseurlRank + $smmid + $api_key,
         }).then(function(data5) {
             console.log(data5)
+            console.log($http + $server + $baseurlRank + $smmid + $api_key)
 
             for (let q of data5) { // used for/of loop just to try to see if i could optimize the code
                 $userRankLoses = data5[0].losses;
@@ -225,6 +228,7 @@ $(() => {
             url: $magic + $http + $server + $baseurlRankTier + $baseurlRankedQueue + $userRank + $userTier + $api_key,
         }).then(function(data7) {
             console.log(data7)
+            console.log($http + $server + $baseurlRankTier + $baseurlRankedQueue + $userRank + $userTier + $api_key)
                 // console.log(data7) NEEEEEDEDEDEDEDEDEDEDE
             for (let f = 0; f < data7.length; f++) {
                 $tierWins += data7[f].wins;
@@ -250,7 +254,9 @@ $(() => {
                 type: "GET",
                 url: $magic + $http + $server + $baseurlMatchId + $matchesId[p] + $api_key,
             }).then(function(data3) {
+
                 console.log(data3)
+                console.log($http + $server + $baseurlMatchId + $matchesId[p] + $api_key)
                 $individualMatchId = [p];
                 // console.log(data3) NEEEEEDEDEDEDEDEDEDEDE
                 for (let j = 0; j < 10; j++) {
