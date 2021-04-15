@@ -107,7 +107,7 @@ $(() => {
     let $numgames = 10; // it displays the number of games stored in this var
     let $http = "https://"; // empty http for url merge purposes
     let $baseurlSu = ".api.riotgames.com/lol/summoner/v4/summoners/by-name/"; // url used to get information using only users summoners name
-    let $api_key = "?api_key=RGAPI-3e181cab-ab7f-48b4-969a-d650c73b0436"; // my api key
+    let $api_key = "?api_key=RGAPI-8a5f1597-c69d-44ba-98dd-0aeb1f987f5a"; // my api key
     let $magic = "https://cross-anywhere.herokuapp.com/" //heroku bruh byebye cross ERR UWU
     let $baseurlRank = ".api.riotgames.com/lol/league/v4/entries/by-summoner/";
     let $baseurlRankTier = ".api.riotgames.com/lol/league-exp/v4/entries/"; // base url to get the rank info of all the players in the tier and division
