@@ -107,7 +107,7 @@ $(() => {
     let $numgames = 10; // it displays the number of games stored in this var
     let $http = "https://"; // empty http for url merge purposes
     let $baseurlSu = ".api.riotgames.com/lol/summoner/v4/summoners/by-name/"; // url used to get information using only users summoners name
-    let $api_key = "?api_key=RGAPI-8a5f1597-c69d-44ba-98dd-0aeb1f987f5a"; // my api key
+    let $api_key = "?api_key=RGAPI-5dd35c5a-07f9-4173-99ff-c30aed1e75e7"; // my api key
     let $magic = "https://cross-anywhere.herokuapp.com/" //heroku bruh byebye cross ERR UWU
     let $baseurlRank = ".api.riotgames.com/lol/league/v4/entries/by-summoner/";
     let $baseurlRankTier = ".api.riotgames.com/lol/league-exp/v4/entries/"; // base url to get the rank info of all the players in the tier and division
@@ -123,7 +123,8 @@ $(() => {
     let $champNameBeforeAllyT
     let $champAllyTips; // pls no go away uwu bad variables
     let $champAllyTipsJSON;
-
+    let $itemImgLocal = "img/item";
+    let $championImgLocal ="img/champion/";
 
 
     let $eggs = () => { // first ajax request, everything begins with your summoner name, since it's the only public info that you have before this call
@@ -454,7 +455,7 @@ $(() => {
         $("#matchlist").append(`<div class="matchnum" id=match${$individualMatchId}>
         <br>
         <a href="https://leagueoflegends.fandom.com/wiki/${$daListChamp[$championPosition].id}/LoL" target="_blank"> 
-        <img class="champImg" src="${$championImg}${$daListChamp[$championPosition].id}.png"/></a>
+        <img class="champImg" src="${$championImgLocal}/${$daListChamp[$championPosition].id}.png"/></a>
         <br>
         <img class="summIcons" src="${$summ1Img}"><img class="summIcons" src="${$summ2Img}"<br>
         <p>${$gResult}</p>
@@ -516,7 +517,7 @@ $(() => {
             $(`#match${$individualMatchId}`).append(`<img class="itemImg tooltip" src="${$ornnItems}${$items[$itemr][$itemnum]}.png">`)
         } else if ($ornnItemNotPresent == true) {
             $(`#match${$individualMatchId}`).append(`<div class="tooltip"><a href="https://leagueoflegends.fandom.com/wiki/${$wikiaItem}" target="_blank">
-            <img class="itemImg"  src="${$itemImg}${$participantXitems0to6[$itemr][$itemnum]}.png">
+            <img class="itemImg"  src="${$itemImgLocal}/${$participantXitems0to6[$itemr][$itemnum]}.png">
             <span class="tooltiptext">Name: ${$tooltipItemName}<br><br>Cost: ${$tooltipItemPrice}g<br><br>Sells For: ${$tooltipItemSell}g<br><br>${$tooltipItemDescription}</span></div>`)
         }
 
