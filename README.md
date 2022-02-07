@@ -1,4 +1,5 @@
-﻿# Welcome to Jorge's LoL Stat Website! (Project 1)
+﻿# Welcome to Jorge's LoL Stat Website! (Project I)
+## This project as of now is deprecated, and it will no longer be in github.io and it will have it's own repo and be properly archived.
 
 
 For my first project I attempted to create a League of Legends stat website using Riot Game's API. 
